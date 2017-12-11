@@ -1,0 +1,18 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="pre-push" type="PLAIN_TEXT" />
+      <mapping pattern="wrapper" type="PLAIN_TEXT" />
+      <mapping pattern="mongo" type="PLAIN_TEXT" />
+      <mapping pattern="Makefile" type="PLAIN_TEXT" />
+      <mapping pattern=".npmrc" type="PLAIN_TEXT" />
+      <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
+      <mapping pattern="201710171455testing" type="PLAIN_TEXT" />
+      <mapping pattern="201710061533testing" type="PLAIN_TEXT" />
+      <mapping pattern="document-creation" type="PLAIN_TEXT" />
+      <mapping pattern="ReferenceSelect" type="PLAIN_TEXT" />
+      <mapping ext="bash" type="PLAIN_TEXT" />
+      <mapping ext="tsw" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>

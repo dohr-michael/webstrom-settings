@@ -1,0 +1,30 @@
+<templateSet group="custom">
+  <template name="fmtoffon" value="// @formatter:off&#10;&#10;// @formatter:on" description="Formatter off on" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="awp" value="export type $NAME$Payload = {};&#10;export type $NAME$ = flux.ActionWP&lt;$NAME$Payload&gt;;&#10;export const $NAME$: flux.ActionWPFn&lt;$NAME$Payload&gt; = flux.Actions.withPayload&lt;$NAME$Payload&gt;( '$ACTION_NAME$' );" description="Action With Payload" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="redfn" value="/**&#10; * TODO Comment here ;-)&#10; */&#10;function $NAME$( state: State, action: $NS$.$NAME_CAP$ ): State {&#10;    return state;&#10;}" description="Reducer function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NS" expression="" defaultValue="&quot;actions&quot;" alwaysStopAt="true" />
+    <variable name="NAME_CAP" expression="capitalize(NAME)" defaultValue="x" alwaysStopAt="false" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="seffn" value="/**&#10; * TODO Write doc.&#10; */&#10;const on$NAME$: Epic&lt;actions.Actions, Stores&gt; = ( action$, store ) =&gt;&#10;    action$.ofType( actions.$NAME$.Type )&#10;           .$NEXT$( ( a:actions.$NAME$ ) =&gt; a );" description="Side Effect Function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
