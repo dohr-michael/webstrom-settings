@@ -13,6 +13,7 @@
       <mapping pattern="ReferenceSelect" type="PLAIN_TEXT" />
       <mapping ext="bash" type="PLAIN_TEXT" />
       <mapping ext="tsw" type="PLAIN_TEXT" />
+      <mapping ext="scala" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
